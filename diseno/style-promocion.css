@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#carousel-container {
+  width: 80%;
+  overflow: hidden;
+}
+
+#carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+}
+
+.slide {
+  width: 100%;
+  flex: 0 0 auto;
+  text-align: center;
+  /* Añadir para centrar el contenido dentro del slide */
+}
+
+.slide img {
+  max-width: 60%;
+  /* Asegura que la imagen no supere el ancho del contenedor */
+  max-height: 60%;
+  /* Asegura que la imagen no supere la altura del contenedor */
+  display: inline-block;
+  /* Elimina el espacio adicional debajo de la imagen */
+}
