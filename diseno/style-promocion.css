@@ -1,37 +1,67 @@
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.container {
+  position: relative;
+  left: 540px;
+  top: 70px;
+  height: 500px;
+  width: 700px;
+  perspective: 500px;
+  transform-style: preserve-3d;
 }
 
-#carousel-container {
-  width: 80%;
+.box {
+  width: 440px;
+  height: 440px;
+  box-shadow: 0 0 10px #0000004d;
+  border: 1px solid #bbb;
+  border-radius: 25px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 800ms ease-in-out;
   overflow: hidden;
 }
 
-#carousel {
-  display: flex;
-  transition: transform 1s ease-in-out;
-  justify-content: center;
-  /* Centrar horizontalmente */
-  align-items: center;
-  /* Centrar verticalmente */
-}
-
-.slide {
+img {
   width: 100%;
-  flex: 0 0 auto;
-  text-align: center;
-  /* Añadir para centrar el contenido dentro del slide */
+  height: 100%;
 }
 
-.slide img {
-  max-width: 60%;
-  /* Asegura que la imagen no supere el ancho del contenedor */
-  max-height: 60%;
-  /* Asegura que la imagen no supere la altura del contenedor */
-  display: inline-block;
-  /* Elimina el espacio adicional debajo de la imagen */
+.box {
+  left: 1000%;
+}
+
+.box:nth-of-type(5) {
+  left: 35%;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-150px);
+  opacity: 0.25;
+  z-index: 2;
+}
+
+.box:nth-of-type(4) {
+  left: 30%;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
+  opacity: 0.5;
+  z-index: 5;
+}
+
+.box:nth-of-type(3) {
+  left: 25%;
+  color: #eee;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-50px);
+  opacity: 0.75;
+  z-index: 10;
+}
+
+.box:nth-of-type(2) {
+  left: 20%;
+  transform: translate(-50%, -50%) rotateY(-10deg);
+  z-index: 5;
+}
+
+.box:first-of-type {
+  left: 15%;
+  transform: translate(-50%, -50%) rotateY(-10deg);
+  z-index: 5;
+  opacity: 0;
 }
