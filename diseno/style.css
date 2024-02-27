@@ -92,14 +92,18 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .list li {
-    display: inline;
-    margin-right: 10px; /* Ajusta este valor según tus preferencias para agregar espacio entre elementos */
-  }
-  
+}
 
+.list li {
+    display: inline;
+    margin-right: 10px;
+    /* Ajusta este valor según tus preferencias para agregar espacio entre elementos */
+}
+
+p,
+h2 {
+    font-size: clamp(12px, 4vw, 32px);
+}
 
 /* Media query para hacer la página responsiva en dispositivos móviles */
 @media screen and (max-width: 768px) {
