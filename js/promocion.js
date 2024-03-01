@@ -1,4 +1,4 @@
-const $container = document.querySelector(".container");
+const $container = document.querySelector(".container-1");
 
 setInterval(() => {
   const $last = $container.firstElementChild;
