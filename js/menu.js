@@ -25,3 +25,4 @@ function seleccionarOpcion(enlace) {
   // Agrega la clase "seleccionado" solo al enlace actual
   enlace.classList.add("seleccionado");
 }
+

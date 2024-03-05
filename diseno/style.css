@@ -3,6 +3,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    font-size: clamp(12px, 4vw, 30px);
 }
 
 
@@ -14,7 +15,7 @@ section {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    color: #fff;
+    /*   color: #fff;*/
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -34,13 +35,41 @@ p {
     font-size: clamp(8px, 4vw, 18px);
 }
 
-/* Media query para hacer la página responsiva en dispositivos móviles */
-@media screen and (max-width: 768px) {
-
-    body {
-        font-size: 12px;
-        text-align: justify;
-    }
+.carousel {
+    overflow: hidden;
+    position: relative;
 }
 
-@media screen and (max-width: 480px) {}
+.slide {
+    display: none;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.apartado {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el contenido */
+}
+
+.apartado img {
+    width: 450px;
+    height: 400px;
+    margin-right: 20px;
+    /* Margen entre la imagen y el texto */
+}
+
+
+/* Estilo para submenús */
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+ul li:hover>ul {
+    display: block;
+}

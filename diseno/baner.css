@@ -1,5 +1,6 @@
 .container {
     width: 97%;
+    height: 40px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +29,7 @@ nav ul li {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 40px;
 }
 
 .image-section {
@@ -40,7 +41,7 @@ nav ul li {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 80px;
+    height: 60px;
 }
 
 .list {
@@ -89,4 +90,47 @@ nav .menu.seleccionado {
     position: absolute;
     bottom: -5px;
     left: 0;
+}
+
+.text-b{
+    color: #ac1e38;
+}
+h2{
+    color: #099f9a;
+}
+.text-p{
+    color: rgba(143, 136, 136, 0.945);
+}
+
+/* Estilos para los submenús */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinea el submenú debajo de la opción padre */
+    left: 0; /* Alinea el submenú a la izquierda */
+    background-color: #fff; /* Cambiar según tu diseño */
+    border: 1px solid #ddd; /* Cambiar según tu diseño */
+    z-index: 9999; /* Asegura que el submenú esté sobre otros elementos */
+}
+
+nav ul li {
+    position: relative; /* Asegura que el submenú se posicione correctamente */
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Estilos para los submenús y sus elementos */
+nav ul ul li {
+    display: block;
+    margin-right: 0; /* Ajusta el margen si es necesario */
+}
+
+nav ul ul li a {
+    display: block;
+    padding: 10px; /* Ajusta el relleno según tu diseño */
+    text-decoration: none;
+    font-size: 12px;
+    color: #7e7979; /* Cambia el color según tu diseño */
 }

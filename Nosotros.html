@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="diseno/baner.css">
-    <title>Baner</title>
+    <link rel="stylesheet" type="text/css" href="diseno/style.css">
 </head>
-
 <body>
     <div class="container">
 
@@ -19,16 +16,16 @@
         <nav>
             <ul>
                 <li>
-                    <a class="menu" href="Nosotros.html">Nosotros</a>
+                    <a class="menu" href="Nosotros.html" onclick="seleccionarOpcion(this)">Nosotros</a>
                 </li>
                 <li>
-                    <a class="menu" href="#">Staff de Médicos</a>
+                    <a class="menu" href="#" onclick="seleccionarOpcion(this)">Staff de Médicos</a>
                 </li>
                 <li>
-                    <a class="menu" href="Epecialidad.html">Especialidades</a>
+                    <a class="menu" href="Epecialidad.html" onclick="seleccionarOpcion(this)">Especialidades</a>
                 </li>
                 <li>
-                    <a class="menu" href="#">Servicios</a>
+                    <a class="menu" href="#" onclick="seleccionarOpcion(this)">Servicios</a>
                     <ul>
                         <li>
                             <a class="menu" href="#" onclick="seleccionarOpcion(this)">Laboratorio</a>
@@ -39,17 +36,29 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="menu" href="Promocion.html">Promociones</a>
+                    <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
                 </li>
 
             </ul>
-
         </nav>
-
-
     </div>
+<br><br>
+    <div>
+        <div>
+            <div class="apartado">
+               
+                <div class="texto">
+                    <p class="text-b">PRESENTACIÓN</p>
+                    <h2>Clínica X</h2>
+                    <p class="text-p">
+                        Informacion de la empresa en mencion
+                    </p>
+                </div>
+                <img src="image/inicio/doctora.jpg">
+        </div>
+    </div>
+
     <script src="js/menu.js"></script>
 
 </body>
-
 </html>
