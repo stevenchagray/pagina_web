@@ -55,7 +55,7 @@ nav ul li {
     margin-right: 10px;
 }
 
-.dise-a {
+.menu {
     font-weight: bold;
     color: #099f9a;
     margin-bottom: 10px;
@@ -63,15 +63,15 @@ nav ul li {
     font-size: clamp(12px, 4vw, 24px);
 }
 
+.sub-menu {
+    color: #099f9a;
+    text-decoration: none;
+    font-size: clamp(8px, 4vw, 17px);
+}
+
 nav .menu {
     text-decoration: none;
     position: relative;
-    font-weight: bold;
-    color: #099f9a;
-    margin-bottom: 10px;
-    text-decoration: none;
-    font-size: clamp(12px, 4vw, 24px);
-
 }
 
 
@@ -146,4 +146,35 @@ nav ul ul li {
     /* Ajusta el relleno según tu diseño */
     text-decoration: none;
     font-size: 12px;
+}
+
+.texto-1 {
+    width: 40%;
+    background-color: #099f9a;
+    text-align: left; 
+}
+
+.texto-2 {
+    width: 60%;
+    background-color: #ac1e38;
+    text-align: right; 
+}
+
+.baner-a {
+    display: flex; /* Hace que los divs se muestren en la misma fila */
+    margin-right: 20px; /* Ajusta el margen derecho para separar los divs */
+    align-items: center;
+}
+
+.texto-1,
+.texto-2 {
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: clamp(8px, 4vw, 17px);
+    color: white;
+}
+.texto-2 .txt-a {
+    margin-right: 10px; /* Ajusta el margen derecho entre los enlaces */
 }
