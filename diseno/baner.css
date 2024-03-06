@@ -55,7 +55,7 @@ nav ul li {
     margin-right: 10px;
 }
 
-a {
+.dise-a {
     font-weight: bold;
     color: #099f9a;
     margin-bottom: 10px;
@@ -66,6 +66,12 @@ a {
 nav .menu {
     text-decoration: none;
     position: relative;
+    font-weight: bold;
+    color: #099f9a;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: clamp(12px, 4vw, 24px);
+
 }
 
 
@@ -92,13 +98,15 @@ nav .menu.seleccionado {
     left: 0;
 }
 
-.text-b{
+.text-b {
     color: #ac1e38;
 }
-h2{
+
+h2 {
     color: #099f9a;
 }
-.text-p{
+
+.text-p {
     color: rgba(143, 136, 136, 0.945);
 }
 
@@ -106,31 +114,36 @@ h2{
 nav ul ul {
     display: none;
     position: absolute;
-    top: 100%; /* Alinea el submenú debajo de la opción padre */
-    left: 0; /* Alinea el submenú a la izquierda */
-    background-color: #fff; /* Cambiar según tu diseño */
-    border: 1px solid #ddd; /* Cambiar según tu diseño */
-    z-index: 9999; /* Asegura que el submenú esté sobre otros elementos */
+    top: 100%;
+    /* Alinea el submenú debajo de la opción padre */
+    left: 0;
+    /* Alinea el submenú a la izquierda */
+    /* Cambiar según tu diseño *
+    /* Cambiar según tu diseño */
+    z-index: 9999;
+    /* Asegura que el submenú esté sobre otros elementos */
 }
 
 nav ul li {
-    position: relative; /* Asegura que el submenú se posicione correctamente */
+    position: relative;
+    /* Asegura que el submenú se posicione correctamente */
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: block;
 }
 
 /* Estilos para los submenús y sus elementos */
 nav ul ul li {
     display: block;
-    margin-right: 0; /* Ajusta el margen si es necesario */
+    margin-right: 0;
+    /* Ajusta el margen si es necesario */
 }
 
-nav ul ul li a {
+nav ul ul li {
     display: block;
-    padding: 10px; /* Ajusta el relleno según tu diseño */
+    padding: 10px;
+    /* Ajusta el relleno según tu diseño */
     text-decoration: none;
     font-size: 12px;
-    color: #7e7979; /* Cambia el color según tu diseño */
 }

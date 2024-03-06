@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="diseno/baner.css">
     <link rel="stylesheet" type="text/css" href="diseno/style.css">
+    <link rel="stylesheet" type="text/css" href="diseno/darkmode.css">
 </head>
+
 <body>
     <div class="container">
 
@@ -39,14 +42,18 @@
                     <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
                 </li>
 
+                <a href="#" id="darkModeToggle" class="darkMode" onclick="toggleDarkMode()">
+                    <img src="image/dark-mode-light.png" id="darkModeIcon">
+                </a>
+
             </ul>
         </nav>
     </div>
-<br><br>
+    <br><br>
     <div>
         <div>
             <div class="apartado">
-               
+
                 <div class="texto">
                     <p class="text-b">PRESENTACIÓN</p>
                     <h2>Clínica X</h2>
@@ -55,10 +62,11 @@
                     </p>
                 </div>
                 <img src="image/inicio/doctora.jpg">
+            </div>
         </div>
-    </div>
 
-    <script src="js/menu.js"></script>
-
+        <script src="js/menu.js"></script>
+        <script src="js/dark-mode.js"></script>
 </body>
+
 </html>

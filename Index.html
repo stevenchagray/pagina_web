@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="diseno/style.css">
     <link rel="stylesheet" type="text/css" href="diseno/baner.css">
+    <link rel="stylesheet" type="text/css" href="diseno/darkmode.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a Nuestro Policlinico</title>
 </head>
 
 <body>
 
+    <div class="baner-a">
+        <a class="texto-1">
+            Tu salud es igual de importante para nosotros
+        </a>
+        <a class="texto-2">
+            Tu salud es igual de importante para nosotros
+        </a>
+    </div>
     <div class="container">
 
-        <a href="Index.html">
-            <img src="image/logo.png" width="250px" height="82px">
+        <a class="dise-a" href="Index.html">
+            <img src="image/logo.png" width="250px" height="72px">
         </a>
 
         <nav id="menu">
@@ -30,9 +39,7 @@
                 </li>
                 <li>
                     <a class="menu" href="#" onclick="seleccionarOpcion(this)">Servicios</a>
-                <li>
-                    <a class="menu" href="#">Servicios</a>
-                    <ul>
+                    <ul class="ul-menu">
                         <li>
                             <a class="menu" href="#" onclick="seleccionarOpcion(this)">Laboratorio</a>
                         </li>
@@ -41,15 +48,19 @@
                         </li>
                     </ul>
                 </li>
-                </li>
                 <li>
                     <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
                 </li>
 
+                <a href="#" id="darkModeToggle" class="darkMode" onclick="toggleDarkMode()">
+                    <img src="image/dark-mode-light.png" id="darkModeIcon">
+                </a>
+
             </ul>
+
         </nav>
     </div>
-<br>
+    <br>
     <div class="carousel">
         <img class="slide" src="image/inicio/img1.jpg" alt="Imagen 1" width="100%" height="350px">
         <img class="slide" src="image/inicio/img2.jpg" alt="Imagen 2" width="100%" height="350px">
@@ -66,19 +77,20 @@
             </p>
         </div>
     </div>
-<br>
+    <br>
     <footer>
         <p>Contacto: Saludplushuacho@gmail.com | Teléfono: +51 906 965 272</p>
     </footer>
 
 
-    <a href="https://api.whatsapp.com/send?phone=51906965272&text=Quisiera%20mas%20informacion" target="_blank">
+    <a class="dise-a" href="https://api.whatsapp.com/send?phone=51906965272&text=Quisiera%20mas%20informacion"
+        target="_blank">
         <img src="image/whatsapp.png" class="whatsapp-button">
     </a>
 
     <script src="js/menu.js"></script>
     <script src="js/carrusel.js"></script>
-
+    <script src="js/dark-mode.js"></script>
 </body>
 
 </html>
