@@ -1,4 +1,5 @@
 .container {
+    margin-top: 20px;
     width: 97%;
     height: 40px;
     margin: 0 auto;
@@ -25,7 +26,6 @@ nav ul li {
 
 .cabecera {
     margin-top: 40px;
-    background-color: white;
     width: 100%;
     display: flex;
     align-items: center;
@@ -151,30 +151,83 @@ nav ul ul li {
 .texto-1 {
     width: 40%;
     background-color: #099f9a;
-    text-align: left; 
+    text-align: left;
 }
 
 .texto-2 {
     width: 60%;
     background-color: #ac1e38;
-    text-align: right; 
+    text-align: right;
 }
 
 .baner-a {
-    display: flex; /* Hace que los divs se muestren en la misma fila */
-    margin-right: 20px; /* Ajusta el margen derecho para separar los divs */
+    display: flex;
+    /* Hace que los divs se muestren en la misma fila */
+    margin-right: 20px;
+    /* Ajusta el margen derecho para separar los divs */
     align-items: center;
+    margin: 0;
 }
 
 .texto-1,
 .texto-2 {
-    margin: 0; /* Elimina el margen predeterminado */
+    margin: 0;
+    /* Elimina el margen predeterminado */
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
     font-size: clamp(8px, 4vw, 17px);
     color: white;
 }
+
 .texto-2 .txt-a {
-    margin-right: 10px; /* Ajusta el margen derecho entre los enlaces */
+    margin-right: 10px;
+    color: white;
+    /* Ajusta el margen derecho entre los enlaces */
+}
+
+.comunicate {
+    position: relative;
+    left: -300px;
+    background-color: #099f9a;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    height: 38px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cerrar {
+    background-color: #ac1e38;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    height: 38px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.comunicate:hover {
+    background-color: #b54fed;
+}
+
+.comunicate::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.comunicate:hover::before {
+    left: 0;
 }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="diseno/baner.css">
+    <link rel="stylesheet" type="text/css" href="diseno/darkmode.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- BANER INICIO-->
+    <div class="baner-a">
+        <div class="texto-1">
+            <a>
+                Tu salud es igual de importante para nosotros
+            </a>
+        </div>
+
+        <div class="texto-2">
+            <a class="txt-a">
+                Correo: invitado123@gmail.com
+            </a>
+
+            <a class="txt-a">
+                Celular: +51 xxx xxx xxx
+            </a>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <a class="dise-a" href="Index.html">
+            <img src="image/logo.png" width="250px" height="72px">
+        </a>
+
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a class="menu" href="Nosotros.html" onclick="seleccionarOpcion(this)">Nosotros</a>
+                </li>
+                <li>
+                    <a class="menu" href="StaffMedicos.html" onclick="seleccionarOpcion(this)">Staff de Médicos</a>
+                </li>
+                <li>
+                    <a class="menu" href="Epecialidad.html" onclick="seleccionarOpcion(this)">Especialidades</a>
+                </li>
+                <li>
+                    <a class="menu" href="#" onclick="seleccionarOpcion(this)">Servicios</a>
+                    <ul class="ul-menu">
+                        <li>
+                            <a class="sub-menu" href="#" onclick="seleccionarOpcion(this)">Laboratorio</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu" href="#" onclick="seleccionarOpcion(this)">Farmacia</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
+                </li>
+
+                <a href="#" id="darkModeToggle" class="darkMode" onclick="toggleDarkMode()">
+                    <img src="image/dark-mode-light.png" id="darkModeIcon">
+                </a>
+
+            </ul>
+
+        </nav>
+    </div>
+
+    <!--BANER FINAL-->
+
+    <br>
+    <div class="medicos">
+        <div class="medico-1">
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="medicos/image1.jpg" height="280px" width="150px">
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <img src="medicos/image1.jpg" height="280px" width="150px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="comunicate">Comunicate</button>
+                    <button type="button" class="cerrar" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dark-mode.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
