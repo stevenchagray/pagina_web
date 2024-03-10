@@ -5,8 +5,6 @@ footer {
     padding: 10px 0;
     font-size: clamp(12px, 4vw, 30px);
 }
-
-
 section {
     padding: 20px 0;
 }
@@ -25,21 +23,10 @@ section {
     z-index: 2;
     cursor: pointer;
 }
-
-
-h2 {
-    font-size: clamp(12px, 4vw, 30px);
-}
-
-p {
-    font-size: clamp(8px, 4vw, 18px);
-}
-
 .carousel {
     overflow: hidden;
     position: relative;
 }
-
 .slide {
     display: none;
 }
@@ -62,14 +49,4 @@ p {
 }
 
 
-/* Estilo para submenús */
-ul ul {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-}
 
-ul li:hover>ul {
-    display: block;
-}

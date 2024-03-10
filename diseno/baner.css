@@ -1,9 +1,6 @@
 .container {
     margin-top: 20px;
-    width: 97%;
-    height: 40px;
-    margin: 0 auto;
-    padding: 20px;
+    height: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     position: relative;
@@ -11,6 +8,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 20px;
+    background-color: grey;
 }
 
 nav ul {
@@ -60,7 +59,7 @@ nav ul li {
     color: #099f9a;
     margin-bottom: 10px;
     text-decoration: none;
-    font-size: clamp(12px, 4vw, 24px);
+    font-size: clamp(12px, 4vw, 20px);
 }
 
 .sub-menu {
@@ -233,14 +232,12 @@ nav ul ul li {
 }
 
 .description {
-    background-color: #099f9a;
-    width: 600px;
+      width: 600px;
     text-align: justify;
     font-size: clamp(8px, 4vw, 16px);
 }
 
 .titulo {
-    color: black;
     padding: 0;
     font-size: clamp(14px, 4vw, 28px);
     text-align: center;
@@ -262,15 +259,50 @@ nav ul ul li {
 .modal-body {
     display: flex;
     justify-content: space-around;
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .detallado {
     display: flex;
-    padding-left: 20px;
+    padding: 20px;  
 }
 
-.horario1 {
+.horario {
     background-color: gray;
-
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
 }
+
+.medicos{
+    padding: 20px;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes colorChange {
+    0% {
+      color:#099f9a;
+    }
+    50% {
+      color: #b54fed;
+    }
+    100% {
+      color: #ac1e38;
+    }
+  }
+  
+  .titulo    {
+    animation: slideIn 1s ease-out, colorChange 3s ease-in-out infinite;
+  }
+
+  .apartado{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
