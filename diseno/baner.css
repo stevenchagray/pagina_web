@@ -187,8 +187,8 @@ nav ul ul li {
 }
 
 .comunicate {
-    position: relative;
-    left: -300px;
+    position: absolute;
+    left: 10px;
     background-color: #099f9a;
     box-sizing: border-box;
     text-decoration: none;
@@ -230,4 +230,47 @@ nav ul ul li {
 
 .comunicate:hover::before {
     left: 0;
+}
+
+.description {
+    background-color: #099f9a;
+    width: 600px;
+    text-align: justify;
+    font-size: clamp(8px, 4vw, 16px);
+}
+
+.titulo {
+    color: black;
+    padding: 0;
+    font-size: clamp(14px, 4vw, 28px);
+    text-align: center;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ac1e38;
+}
+
+.meses {
+    font-size: clamp(8px, 4vw, 18px);
+    padding-left: 10px;
+    text-align: center;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.detallado {
+    display: flex;
+    padding-left: 20px;
+}
+
+.horario1 {
+    background-color: gray;
+
 }

@@ -8,8 +8,8 @@ function toggleDarkMode() {
 
   if (darkModeIcon) {
     darkModeIcon.src = isDarkModeEnabled
-      ? "image/dark-mode-dark.png"
-      : "image/dark-mode-light.png";
+      ? "image/iconos/dark-mode-dark.png"
+      : "image/iconos/dark-mode-light.png";
   }
 
   localStorage.setItem("dark-mode", isDarkModeEnabled);
@@ -23,6 +23,6 @@ if (isDarkModeSaved && isDarkModeSaved === "true") {
   // Cambiar dinámicamente la fuente de la imagen según el modo oscuro
   const darkModeIcon = document.getElementById("darkModeIcon");
   if (darkModeIcon) {
-    darkModeIcon.src = "image/dark-mode-dark.png";
+    darkModeIcon.src = "image/iconos/dark-mode-dark.png";
   }
 }

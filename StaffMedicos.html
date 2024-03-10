@@ -64,7 +64,7 @@
                 </li>
 
                 <a href="#" id="darkModeToggle" class="darkMode" onclick="toggleDarkMode()">
-                    <img src="image/dark-mode-light.png" id="darkModeIcon">
+                    <img src="image/iconos/dark-mode-light.png" id="darkModeIcon">
                 </a>
 
             </ul>
@@ -77,19 +77,38 @@
     <br>
     <div class="medicos">
         <div class="medico-1">
-            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modal-descri">
                 <img src="medicos/image1.jpg" height="280px" width="150px">
             </a>
         </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade modal-descri" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
                 <div class="modal-body">
-                    <img src="medicos/image1.jpg" height="280px" width="150px">
+                    <div>
+                        <img src="medicos/image1.jpg" height="500px" width="250px">
+                    </div>
+                    <div class="description">
+                        <h2 class="titulo">HORARIOS DE ATENCIÓN</h2>
+                        <div class="subtitulo">
+                            <img class="ico-cal" src="image/iconos/calendario.png">
+                            <h3 class="meses">ATENCIÓN MARZO</h3>
+                        </div>
+
+                        <div class="detallado">
+                            <div class="horario1">
+                                <spam>Sabado 12</spam><br>
+                                <spam>8:00 14:00</spam>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="comunicate">Comunicate</button>
