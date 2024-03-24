@@ -231,7 +231,7 @@ nav ul ul li {
 }
 
 .description {
-      width: 600px;
+    width: 600px;
     text-align: justify;
     font-size: clamp(8px, 4vw, 16px);
 }
@@ -249,7 +249,7 @@ nav ul ul li {
     background-color: #ac1e38;
 }
 
-.meses {
+#mes {
     font-size: clamp(8px, 4vw, 18px);
     padding-left: 10px;
     text-align: center;
@@ -263,45 +263,94 @@ nav ul ul li {
 
 .detallado {
     display: flex;
-    padding: 20px;  
+    padding: 20px;
 }
 
-.horario {
-    background-color: gray;
+.c1-horario {
     padding: 10px;
     border-radius: 20px;
     margin-right: 10px;
 }
 
-.medicos{
+.cj-medicos {
     padding: 20px;
+    display: flex;
 }
+
+#medicos {
+    margin-right: 40px;
+}
+
 
 @keyframes slideIn {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  @keyframes colorChange {
-    0% {
-      color:#099f9a;
-    }
-    50% {
-      color: #b54fed;
-    }
-    100% {
-      color: #ac1e38;
-    }
-  }
-  
-  .titulo    {
-    animation: slideIn 1s ease-out, colorChange 3s ease-in-out infinite;
-  }
 
-  .apartado{
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #099f9a;
+    }
+
+    50% {
+        color: #b54fed;
+    }
+
+    100% {
+        color: #ac1e38;
+    }
+}
+
+.titulo {
+    animation: slideIn 1s ease-out, colorChange 3s ease-in-out infinite;
+}
+
+.apartado {
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
+
+.fecha-pasada {
+    background-color: gray;
+}
+
+.fecha-futura {
+    background-color: rgb(102, 102, 228);
+}
+
+#filterDropdown {
+    display: flex;
+    justify-content: center;
+}
+
+#filterSelect {
+    width: 500px;
+}
+
+.form-select {
+    margin-right: 20px;
+}
+
+#applyFilter {
+    background-color: #ac1e38;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Transición suave del color de fondo */
+}
+
+#applyFilter:hover {
+    background-color: #099f9a;
+    /* Color diferente al pasar el cursor sobre el botón */
+}
+
+.c1-horario {
+    text-align: center;
+}
