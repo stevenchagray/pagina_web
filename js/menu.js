@@ -76,7 +76,8 @@ function obtenerMesActual() {
 }
 
 // Llamar a la función y mostrar el mes en el elemento con id "mes"
-document.getElementById("mes").textContent = obtenerMesActual();
+document.getElementById("mes").textContent =
+  "ATENCION" + " " + obtenerMesActual();
 
 //OBTENER NOMBRE DEL DIA DE LA SEMANA
 
