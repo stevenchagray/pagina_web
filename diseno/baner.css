@@ -275,6 +275,12 @@ nav ul ul li {
 .cj-medicos {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinear los elementos a la izquierda /
+}
+
+.cj-medicos > div {
+    margin: 10px; / Espaciado entre los elementos */
 }
 
 #medicos {

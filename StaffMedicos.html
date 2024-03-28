@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="diseno/style.css">
     <link rel="stylesheet" type="text/css" href="diseno/baner.css">
     <link rel="stylesheet" type="text/css" href="diseno/darkmode.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -74,39 +75,348 @@
 
     <div id="filterDropdown">
         <select id="filterSelect" class="form-select">
-            <option value="all">Mostrar Todo</option>
-            <option value="cardiologo">Cardiólogos</option>
-            <option value="pediatra">Pediatras</option>
-            <option value="psicologo">Psicólogos</option>
+            <option value="all">MEDICINA GENERAL</option>
+            <option value="anestesiologo">ANESTESIOLOGIA</option>
+            <option value="cardiologo">CARDIOLOGÍA</option>
+            <option value="cir_cab_cuello">CIRUGIA DE CABEZA Y CUELLO</option>
+            <option value="cir_tor_car">CIRUGIA DE TORAX CARDIOVASCULAR</option>
+            <option value="cirugia">CIRUGÍA GENERAL</option>
+            <option value="oncologo">CIRUGIA ONCOLOGICA</option>
+            <option value="cir_pediatra">CIRUGIA PEDIATRICA</option>
+            <option value="plastico">CIRUGIA PLASTICA</option>
+            <option value="dermatologo">DERMATOLOGÍA</option>
+            <option value="endocrinologia">ENDOCRINOLOGIA</option>
+            <option value="fis_rehabilitacion">FISIOTERAPIA Y REHABILITACION</option>
+            <option value="flebologia">FLEBOLOGIA</option>
+            <option value="gastroenterologia">GASTROENTEROLOGIA</option>
+            <option value="geriatria">GERIATRIA</option>
+            <option value="ginecologia">GINECOLOGIA</option>
+            <option value="gin_oncologo">GINECOLOGIA ONCOLOGICA</option>
+            <option value="hematologo">HEMATOLOGIA</option>
+            <option value="imagenologia">IMAGENOLOGIA</option>
+            <option value="infectologia">INFECTOLOGIA</option>
+            <option value="lab_clinico">LABORATORIO CLINICO</option>
+            <option value="med_familiar">MEDICINA FAMILIAR</option>
+            <option value="med_fisica_rehabilitacion">MEDICINA FISICA Y REHABILITACION</option>
+            <option value="med_general">MEDICINA GENERAL</option>
+            <option value="med_interna">MEDICINA INTERNA</option>
+            <option value="med_natural">MEDICINA NATURAL</option>
+            <option value="nefrologia">NEFROLOGIA</option>
+            <option value="neonatologia">NEONATOLOGIA</option>
+            <option value="neumologia">NEUMOLOGIA</option>
+            <option value="neurocirugia">NEUROCIRUGIA</option>
+            <option value="neurologia">NEUROLOGIA</option>
+            <option value="nutricion">NUTRICION</option>
+            <option value="obstetricia">OBSTETRICIA</option>
+            <option value="odontologia">ODONTOLOGIA</option>
+            <option value="oftalmologia">OFTALMOLOGIA</option>
+            <option value="oncologia">ONCOLOGICA</option>
+            <option value="otorrinolaringologia">OTORRINOLARINGOLOGIA</option>
+            <option value="pediatra">PEDIATRÍA</option>
+            <option value="podologia">PODOLOGIA</option>
+            <option value="psicologia">PSICOLOGÍA</option>
+            <option value="psiquiatria">PSIQUIATRIA</option>
+            <option value="radiologia">RADIOLOGIA</option>
+            <option value="reumatologia">REUMATOLOGIA</option>
+            <option value="sal_ocupacional">SALUD OCUPACIONAL</option>
+            <option value="ter_lenguaje">TERAPIA LENGUAJE</option>
+            <option value="traum_ortopedia">TRAUMATOLOGIA Y ORTOPEDIA</option>
+            <option value="urologia">UROLOGIA</option>
         </select>
-        <button id="applyFilter" class="btn btn-primary">
+        <button id="applyFilter" for="filterSelect" class="btn btn-primary">
             <img src="image/iconos/lupa-white.png">
         </button>
     </div>
 
 
 
-    <div class="cj-medicos">
+    <div id="resultados" class="cj-medicos">
 
-        <!-- BASE DE DIV PARA CUALQUIER MEDICO-->
-        <div class="cardiologo" id="medicos">
+        <!-- BASE DE DIV PARA CUALQUIER MEDICO -->
+
+        <div class="anestesiologo" id="medicos">
             <a data-bs-toggle="modal" data-bs-target=".modal-descri">
-                <img src="image/medicos/image1.jpg" height="280px" width="150px">
+                <img src="image/medicos/image2.jpg" title="Anestesiologo" alt="Anestesiologo" height="280px" width="150px">
             </a>
         </div>
 
         <div class="cardiologo" id="medicos">
+            <div class="">
+                <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                    <img src="image/medicos/image1.jpg" title="Cardiologo" alt="Cardiologo" height="280px" width="150px">
+                </a>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12 text-white text-decoration-underline" style="background:#8DCACD">
+                    <span class="text-white">Ver Horarios</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cir_cab_cuello" id="medicos">
             <a data-bs-toggle="modal" data-bs-target=".modal-descri">
-                <img src="image/medicos/image2.jpg" height="280px" width="150px">
+                <img src="image/medicos/image1.jpg" title="Cirugia Cabeza Cuello"  alt="Cirugia Cabeza Cuello" height="280px" width="150px">
             </a>
         </div>
 
-        <div class="psicologo" id="medicos">
+        <div class="cir_tor_car" id="medicos">
             <a data-bs-toggle="modal" data-bs-target=".modal-descri">
-                <img src="image/medicos/image1.jpg" height="280px" width="150px">
+                <img src="image/medicos/image2.jpg" title="Cirugia Torso Cardio" alt="Cirugia Torso Cardio" height="280px" width="150px">
             </a>
         </div>
 
+        <div class="cirugia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Cirugia General" alt="Cirugia General" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="oncologo" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Cirugia Oncologica" alt="Cirugia Oncologica" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="cir_pediatra" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Cirugia Pediatrica" alt="Cirugia Pediatrica" height="280px" width="150px">
+            </a>
+        </div>
+
+        
+        <div class="plastico" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Cirugia Plastica" alt="Cirugia Plastica" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="dermatologo" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Dermatologia" alt="Dermatologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="endocrinologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Endocrinologia" alt="Endocrinologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="fis_rehabilitacion" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Fisioterapia Rehabilitacion" alt="Fisioterapia Rehabilitacion" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="flebologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Flebologia" alt="Flebologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="gastroenterologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Gastroenterologia" alt="Gastroenterologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="geriatria" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Geriatria" alt="Geriatria" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="ginecologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Ginecologia" alt="Ginecologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="gin_oncologo" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Ginecologia Oncologica"  alt="Ginecologia Oncologica" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="hematologo" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Hematologia" alt="Hematologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="imagenologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Imagenologia" alt="Imagenologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="infectologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Infectologia" alt="Infectologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="lab_clinico" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Laboratorio Clínico" alt="Laboratorio Clínico" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="med_familiar" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Medicina Familiar" alt="Medicina Familiar" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="med_fisica_rehabilitacion" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Medicina fisica rehabilitacion" alt="Medicina fisica rehabilitacion" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="med_general" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Medicina General" alt="Medicina General" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="med_interna" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Medicina Interna" alt="Medicina Interna" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="med_natural" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Medicina Natural" alt="Medicina Natural" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="nefrologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Nefrologia" alt="Nefrologia" height="280px" width="150px">
+            </a>
+        </div>
+        
+        <div class="neonatologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Neonatologia" alt="Neonatologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="neumologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Neumologia" alt="Neumologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="neurocirugia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Neurocirugia" alt="Neurocirugia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="neurologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Neurologia" alt="Neurologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="nutricion" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Nutricion" alt="Nutricion" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="obstetricia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Obstetricia" alt="Obstetricia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="odontologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Odontologia" alt="Odontologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="oftalmologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Oftalmologia" alt="Oftalmologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="oncologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Oncologia" alt="Oncologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="otorrinolaringologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Otorrinolaringologia" alt="Otorrinolaringologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="pediatra" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Pediatra" alt="Pediatra" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="podologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Podologia" alt="Podologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="psicologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Psicologia" alt="Psicologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="psiquiatria" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Psiquiatria" alt="Psiquiatria" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="radiologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Radiologia" alt="Radiologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="reumatologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Reumatologia" alt="Reumatologia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="sal_ocupacional" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Salud Ocupacional" alt="Salud Ocupacional" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="ter_lenguaje" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Terapia Lenguaje" alt="Terapia Lenguaje" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="traum_ortopedia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image2.jpg" title="Traumatologia Ortopedia" alt="Traumatologia Ortopedia" height="280px" width="150px">
+            </a>
+        </div>
+
+        <div class="urologia" id="medicos">
+            <a data-bs-toggle="modal" data-bs-target=".modal-descri">
+                <img src="image/medicos/image1.jpg" title="Urologia" alt="Urologia" height="280px" width="150px">
+            </a>
+        </div>
     </div>
 
     <!-- Modal -->
