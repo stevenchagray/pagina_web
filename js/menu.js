@@ -44,6 +44,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  var seleccion = document.getElementById('filterSelect').value;
+  var elementos = document.querySelectorAll('.elemento');
+
+  elementos.forEach(function (elemento) {
+    if ( elemento.classList.contains(seleccion)) {
+      elemento.style.display = 'block';
+    } else {
+      elemento.style.display = 'none';
+    }
+  });
+});
+
+
+
+document.getElementById('filterSelect').addEventListener('change', function () {
+  var seleccion = this.value;
+  var elementos = document.querySelectorAll('.elemento');
+
+  elementos.forEach(function (elemento) {
+    if ( elemento.classList.contains(seleccion)) {
+      elemento.style.display = 'block';
+    } else {
+      elemento.style.display = 'none';
+    }
+  });
+});
+
+
+
+
+
+
 //OBTENER MES PARA PONER A EL DIV
 
 function obtenerMesActual() {
