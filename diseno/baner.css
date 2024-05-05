@@ -276,7 +276,8 @@ nav ul ul li {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Alinear los elementos a la izquierda /
+    justify-content: center;
+    /* Alinear los elementos a la izquierda /
 }
 
 .cj-medicos > div {
@@ -285,6 +286,7 @@ nav ul ul li {
 
 #medicos {
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 
@@ -359,4 +361,30 @@ nav ul ul li {
 
 .c1-horario {
     text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            200px,
+            1fr));
+            gap: 16px;
+   margin: 30px;
+}
+
+.especialidad{
+    background-color: #099f9a;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.especialidad:hover{
+    transform: scale(1.1);
 }

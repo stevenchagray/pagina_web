@@ -28,12 +28,13 @@ function seleccionarOpcion(enlace) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const filterSelect = document.getElementById("filterSelect");
-  const applyFilterBtn = document.getElementById("applyFilter");
   const items = document.querySelectorAll(".cj-medicos > div");
 
-  applyFilterBtn.addEventListener("click", function () {
-    const filterValue = filterSelect.value;
+  // Establecer el valor predeterminado al cargar la página
+  filterSelect.value = "med_general";
 
+  // Función para aplicar el filtro
+  function applyFilter(filterValue) {
     items.forEach((item) => {
       item.style.display = "none";
 
@@ -41,8 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
         item.style.display = "block";
       }
     });
+  }
+
+  // Aplicar el filtro al iniciar la página
+  applyFilter(filterSelect.value);
+
+  filterSelect.addEventListener("change", function () {
+    applyFilter(filterSelect.value);
   });
 });
+
 
 //OBTENER MES PARA PONER A EL DIV
 
