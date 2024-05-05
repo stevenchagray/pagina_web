@@ -144,3 +144,4 @@ document.getElementById("c1-fecha1").innerHTML =
 
 document.getElementById("c1-fecha2").innerHTML =
   obtenerDiaSemana(c1fecha2) + " " + c1fecha2 + "<br>10 AM 4 PM";
+
