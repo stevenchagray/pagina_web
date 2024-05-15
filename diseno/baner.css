@@ -1,6 +1,6 @@
 .container {
     margin-top: 20px;
-    height: 70px;
+    height: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     position: relative;
@@ -55,14 +55,14 @@ nav ul li {
 
 .menu {
     font-weight: bold;
-    color: #099f9a;
+    color: #0f6eaa;
     margin-bottom: 10px;
     text-decoration: none;
     font-size: clamp(12px, 4vw, 20px);
 }
 
 .sub-menu {
-    color: #099f9a;
+    color: #0f6eaa;
     text-decoration: none;
     font-size: clamp(8px, 4vw, 17px);
 }
@@ -77,7 +77,7 @@ nav .menu {
 /* Estilo para la opción seleccionada en tu menú */
 /* Estilo para la opción seleccionada en tu menú */
 nav .menu.seleccionado {
-    border-bottom: 2px solid #ac1e38;
+    border-bottom: 2px solid#e5ea8d;
     padding-bottom: 5px;
     position: relative;
     z-index: 2;
@@ -90,18 +90,18 @@ nav .menu.seleccionado {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #ac1e38;
+    background-color: #e5ea8d;
     position: absolute;
     bottom: -5px;
     left: 0;
 }
 
 .text-b {
-    color: #ac1e38;
+    color: #e5ea8d;
 }
 
 h2 {
-    color: #099f9a;
+    color: #0f6eaa;
 }
 
 .text-p {
@@ -148,13 +148,13 @@ nav ul ul li {
 
 .texto-1 {
     width: 40%;
-    background-color: #099f9a;
+    background-color: #0f6eaa;
     text-align: left;
 }
 
 .texto-2 {
     width: 60%;
-    background-color: #ac1e38;
+    background-color: #8bd1e6;
     text-align: right;
 }
 
@@ -187,7 +187,7 @@ nav ul ul li {
 .comunicate {
     position: absolute;
     left: 10px;
-    background-color: #099f9a;
+    background-color: #0f6eaa;
     box-sizing: border-box;
     text-decoration: none;
     color: white;
@@ -200,7 +200,7 @@ nav ul ul li {
 }
 
 .cerrar {
-    background-color: #ac1e38;
+    background-color: #e5ea8d;
     text-decoration: none;
     color: white;
     border-radius: 10px;
@@ -246,7 +246,7 @@ nav ul ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ac1e38;
+    background-color: #e5ea8d;
 }
 
 #mes {
@@ -345,7 +345,7 @@ nav ul ul li {
 }
 
 #applyFilter {
-    background-color: #ac1e38;
+    background-color: #e5ea8d;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -363,28 +363,79 @@ nav ul ul li {
     text-align: center;
 }
 
-.grid-container{
+.grid-container {
+
+    width: 700px;
+    height: 350px;
+
     display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            200px,
-            1fr));
-            gap: 16px;
-   margin: 30px;
+    grid-template-columns: repeat(auto-fit,
+            minmax(200px,
+                1fr));
+    gap: 16px;
+    margin: 30px;
 }
 
-.especialidad{
-    background-color: #099f9a;
+.especialidad {
+    color: yellow;
+    background-color: blue;
     align-items: center;
     display: flex;
     height: 50px;
     text-align: center;
+    font-weight: bold;
     justify-content: center;
-    width: 200px;
+    width: 220px;
     border-radius: 10px;
+    margin: 10px;
 }
 
-.especialidad:hover{
+.especialidad:hover {
     transform: scale(1.1);
+}
+
+.con-espe {
+    display: flex;
+    justify-content: center;
+}
+
+.text-p1 {
+    color: #aed0bd;
+    text-align: center;
+}
+
+.tituloN {
+    color: #e5ea8d;
+}
+
+.con-service {
+    display: flex;
+    justify-content: center;
+}
+
+.servicio {
+    color:  #888485 ;
+    background-color: #6e9eb0 ;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    width: 220px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.grid-container-service {
+
+    width: 300px;
+    height: 150px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(200px,
+                1fr));
+    gap: 16px;
+    margin: 30px;
 }

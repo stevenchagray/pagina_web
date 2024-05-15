@@ -1,5 +1,5 @@
 footer {
-    background-color: #099f9a;
+    background-color: #0f6eaa ;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -48,5 +48,9 @@ section {
     /* Margen entre la imagen y el texto */
 }
 
+.carousel{
+    display: flex;
+    justify-content: center; 
+}
 
 
