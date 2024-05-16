@@ -1,11 +1,12 @@
 .container {
     margin-top: 20px;
-    height: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    padding: 20px;
     position: relative;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
@@ -15,11 +16,13 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 5px;
 }
 
 .cabecera {
@@ -31,11 +34,12 @@ nav ul li {
 }
 
 .image-section {
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .lista {
-    width: 1000px;
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -56,9 +60,9 @@ nav ul li {
 .menu {
     font-weight: bold;
     color: #0f6eaa;
-    margin-bottom: 10px;
     text-decoration: none;
     font-size: clamp(12px, 4vw, 20px);
+    margin: 5px;
 }
 
 .sub-menu {
@@ -72,18 +76,12 @@ nav .menu {
     position: relative;
 }
 
-
-
-/* Estilo para la opción seleccionada en tu menú */
-/* Estilo para la opción seleccionada en tu menú */
 nav .menu.seleccionado {
-    border-bottom: 2px solid#e5ea8d;
+    border-bottom: 2px solid #e5ea8d;
     padding-bottom: 5px;
     position: relative;
     z-index: 2;
-    /* Asegura que la opción seleccionada esté por encima del efecto hover */
 }
-
 
 .menu:not(.seleccionado):hover::after {
     content: "";
@@ -108,72 +106,57 @@ h2 {
     color: rgba(143, 136, 136, 0.945);
 }
 
-/* Estilos para los submenús */
 nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
-    /* Alinea el submenú debajo de la opción padre */
     left: 0;
-    /* Alinea el submenú a la izquierda */
-    /* Cambiar según tu diseño *
-    /* Cambiar según tu diseño */
     z-index: 9999;
-    /* Asegura que el submenú esté sobre otros elementos */
 }
 
 nav ul li {
     position: relative;
-    /* Asegura que el submenú se posicione correctamente */
 }
 
 nav ul li:hover>ul {
     display: block;
 }
 
-/* Estilos para los submenús y sus elementos */
 nav ul ul li {
     display: block;
     margin-right: 0;
-    /* Ajusta el margen si es necesario */
 }
 
 nav ul ul li {
     display: block;
     padding: 10px;
-    /* Ajusta el relleno según tu diseño */
     text-decoration: none;
     font-size: 12px;
 }
 
 .texto-1 {
-    width: 40%;
+    width: 100%;
     background-color: #0f6eaa;
     text-align: left;
+    padding: 10px;
 }
 
 .texto-2 {
-    width: 60%;
+    width: 100%;
     background-color: #8bd1e6;
     text-align: right;
+    padding: 10px;
 }
 
 .baner-a {
-    display: flex;
-    /* Hace que los divs se muestren en la misma fila */
-    margin-right: 20px;
-    /* Ajusta el margen derecho para separar los divs */
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 0;
+   
 }
 
-.texto-1,
-.texto-2 {
+.texto-1, .texto-2 {
     margin: 0;
-    /* Elimina el margen predeterminado */
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
     font-size: clamp(8px, 4vw, 17px);
     color: white;
 }
@@ -181,7 +164,6 @@ nav ul ul li {
 .texto-2 .txt-a {
     margin-right: 10px;
     color: white;
-    /* Ajusta el margen derecho entre los enlaces */
 }
 
 .comunicate {
@@ -231,7 +213,7 @@ nav ul ul li {
 }
 
 .description {
-    width: 600px;
+    width: 100%;
     text-align: justify;
     font-size: clamp(8px, 4vw, 16px);
 }
@@ -240,6 +222,7 @@ nav ul ul li {
     padding: 0;
     font-size: clamp(14px, 4vw, 28px);
     text-align: center;
+    animation: slideIn 1s ease-out, colorChange 3s ease-in-out infinite;
 }
 
 .subtitulo {
@@ -270,6 +253,7 @@ nav ul ul li {
     padding: 10px;
     border-radius: 20px;
     margin-right: 10px;
+    text-align: center;
 }
 
 .cj-medicos {
@@ -277,18 +261,16 @@ nav ul ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* Alinear los elementos a la izquierda /
 }
 
 .cj-medicos > div {
-    margin: 10px; / Espaciado entre los elementos */
+    margin: 10px;
 }
 
 #medicos {
     margin-right: 40px;
     margin-bottom: 40px;
 }
-
 
 @keyframes slideIn {
     0% {
@@ -312,10 +294,6 @@ nav ul ul li {
     100% {
         color: #ac1e38;
     }
-}
-
-.titulo {
-    animation: slideIn 1s ease-out, colorChange 3s ease-in-out infinite;
 }
 
 .apartado {
@@ -351,27 +329,16 @@ nav ul ul li {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-    /* Transición suave del color de fondo */
 }
 
 #applyFilter:hover {
     background-color: #099f9a;
-    /* Color diferente al pasar el cursor sobre el botón */
-}
-
-.c1-horario {
-    text-align: center;
 }
 
 .grid-container {
-
-    width: 700px;
-    height: 350px;
-
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(200px,
-                1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     margin: 30px;
 }
@@ -379,15 +346,15 @@ nav ul ul li {
 .especialidad {
     color: yellow;
     background-color: blue;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     text-align: center;
     font-weight: bold;
-    justify-content: center;
-    width: 220px;
     border-radius: 10px;
     margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 .especialidad:hover {
@@ -397,6 +364,7 @@ nav ul ul li {
 .con-espe {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .text-p1 {
@@ -414,28 +382,46 @@ nav ul ul li {
 }
 
 .servicio {
-    color:  #888485 ;
-    background-color: #6e9eb0 ;
-    align-items: center;
+    color: #888485;
+    background-color: #6e9eb0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     text-align: center;
     font-weight: bold;
-    justify-content: center;
     width: 220px;
     border-radius: 10px;
     margin: 10px;
 }
 
 .grid-container-service {
-
-    width: 300px;
-    height: 150px;
-
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(200px,
-                1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     margin: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .apartado {
+        flex-direction: column;
+    }
+
+    .texto-1, .texto-2 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
 }
