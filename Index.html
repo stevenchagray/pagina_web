@@ -31,39 +31,69 @@
             </a>
         </div>
     </div>
-    
-    <div class="container">
 
-        <a class="dise-a" href="Index.html">
-            <img src="image/logo.png" width="250px" height="120px">
-        </a>
+    <nav id="menu">
 
-        <nav id="menu">
-            <ul>
-                <li>
-                    <a class="menu" href="Nosotros.html" onclick="seleccionarOpcion(this)">Nosotros</a>
-                </li>
-                
-                <li>
-                    <a class="menu" href="Epecialidad.html" onclick="seleccionarOpcion(this)">Especialidades</a>
-                </li>
-                <li>
-                    <a class="menu" href="Servicios.html" onclick="seleccionarOpcion(this)">Servicios</a>
-                    
-                </li>
-                <li>
-                    <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
-                </li>
+        <div class="logo">
+            <a class="dise-a" href="Index.html">
+                <img class="img-logo" src="image/logo.png">
+            </a>
+        </div>
 
-                <a href="#" id="darkModeToggle" class="darkMode" onclick="toggleDarkMode()">
-                    <img src="image/iconos/dark-mode-light.png" id="darkModeIcon">
-                </a>
+        <ul>
+            <li>
+                <a class="menu" href="Nosotros.html" onclick="seleccionarOpcion(this)">Nosotros</a>
+            </li>
 
-            </ul>
+            <li>
+                <a class="menu" href="Epecialidad.html" onclick="seleccionarOpcion(this)">Especialidades</a>
+            </li>
+            <li>
+                <a class="menu" href="Servicios.html" onclick="seleccionarOpcion(this)">Servicios</a>
 
-        </nav>
+            </li>
+            <li>
+                <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
+            </li>
+
+            <a href="#" id="darkModeToggle" class="darkMode" onclick="toggleDarkMode()">
+                <img src="image/iconos/dark-mode-light.png" id="darkModeIcon">
+            </a>
+
+        </ul>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+          
+
+    </nav>
+
+    <div class="menubar">
+        <ul>
+            <li>
+                <a class="menu" href="Nosotros.html" onclick="seleccionarOpcion(this)">Nosotros</a>
+            </li>
+
+            <li>
+                <a class="menu" href="Epecialidad.html" onclick="seleccionarOpcion(this)">Especialidades</a>
+            </li>
+            <li>
+                <a class="menu" href="Servicios.html" onclick="seleccionarOpcion(this)">Servicios</a>
+
+            </li>
+            <li>
+                <a class="menu" href="Promocion.html" onclick="seleccionarOpcion(this)">Promociones</a>
+            </li>
+
+        </ul>
     </div>
-    
+
+
+
     <div class="container carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -80,17 +110,19 @@
                     <img src="image/inicio/img4.jpg" class="d-block w-100" alt="Imagen 4">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-    
+
     <br><br>
     <div class="container">
         <div class="row apartado">
@@ -101,21 +133,23 @@
                 <p class="text-b">PORQUE NOSOTROS TAMBIEN PENSAMOS EN TI</p>
                 <h2>Contamos con servicios 100% en linea</h2>
                 <p class="text-p">Ahora puedes realizar tus citas y consultar tus resultados de forma totalmente online,
-                    también puedes ver nuestro horario de atención, especialidades, médicos y nuestros servicios de salud
+                    también puedes ver nuestro horario de atención, especialidades, médicos y nuestros servicios de
+                    salud
                 </p>
             </div>
         </div>
     </div>
-    
+
     <br>
     <footer class="text-center">
         <p>Contacto: Saludplushuacho@gmail.com | Teléfono: +51 906 965 272</p>
     </footer>
-    
-    <a class="dise-a" href="https://api.whatsapp.com/send?phone=51906965272&text=Quisiera%20mas%20informacion" target="_blank">
+
+    <a class="dise-a" href="https://api.whatsapp.com/send?phone=51906965272&text=Quisiera%20mas%20informacion"
+        target="_blank">
         <img src="image/iconos/whatsapp.png" class="whatsapp-button img-fluid" alt="WhatsApp">
     </a>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

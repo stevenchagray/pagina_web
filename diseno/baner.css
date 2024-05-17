@@ -25,6 +25,11 @@ nav ul li {
     margin: 5px;
 }
 
+.img-logo{
+    width :400px;
+    height:200px;
+}
+
 .cabecera {
     margin-top: 40px;
     width: 100%;
@@ -139,13 +144,17 @@ nav ul ul li {
     background-color: #0f6eaa;
     text-align: left;
     padding: 10px;
+    font-size: clamp(8px, 4vw, 17px);
+    color: white;
 }
 
 .texto-2 {
     width: 100%;
     background-color: #8bd1e6;
     text-align: right;
+    font-size: clamp(8px, 4vw, 17px);
     padding: 10px;
+    
 }
 
 .baner-a {
@@ -155,11 +164,6 @@ nav ul ul li {
    
 }
 
-.texto-1, .texto-2 {
-    margin: 0;
-    font-size: clamp(8px, 4vw, 17px);
-    color: white;
-}
 
 .texto-2 .txt-a {
     margin-right: 10px;
@@ -336,7 +340,7 @@ nav ul ul li {
 }
 
 .grid-container {
-    width: 100%;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
@@ -394,9 +398,12 @@ nav ul ul li {
     border-radius: 10px;
     margin: 10px;
 }
+.servicio:hover{
+    transform: scale(1.1);
+}
 
 .grid-container-service {
-    width: 100%;
+    width: 20%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
@@ -411,8 +418,10 @@ nav ul ul li {
 
     .texto-1, .texto-2 {
         width: 100%;
+        font-size: 10px;
         text-align: center;
         padding: 10px;
+      color: white;
     }
 
     .container {
@@ -424,4 +433,139 @@ nav ul ul li {
         margin: 10px 0;
         text-align: center;
     }
+    .img-logo{
+        width :160px;
+        height:80px;
+    }
 }
+
+nav {
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 1;
+  }
+  nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  nav .logo img {
+    height: 90px;
+    width: auto;
+    margin-right: 10px;
+  }
+  nav .logo h1 {
+    font-size: 1.1rem;
+    background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 1px;
+    background-color: #1f1f1f;
+    display: block;
+    margin: 7px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger-active {
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+  }
+  
+  .hamburger-active .line:nth-child(2) {
+    width: 0px;
+  }
+  
+  .hamburger-active .line:nth-child(1),
+  .hamburger-active .line:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  
+  .hamburger-active .line:nth-child(1) {
+    transform: translateY(12px);
+  }
+  
+  .hamburger-active .line:nth-child(3) {
+    transform: translateY(-5px) rotate(90deg);
+  }
+  
+  .menubar {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    height: 100vh;
+    padding: 20% 0;
+    background: rgba(255, 255, 255);
+    transition: all 0.5s ease-in;
+    z-index: 2;
+  }
+  .active {
+    left: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .menubar ul {
+    padding: 0;
+    list-style: none;
+  }
+  .menubar ul li {
+    margin-bottom: 32px;
+  }
+  
+  .menubar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .menubar ul li a:hover {
+    background-color: #f5f5f5;
+  }
+  @media screen and (max-width: 790px) {
+    .hamburger {
+      display: block;
+    }
+    nav ul {
+      display: none;
+    }
+  }
+  
