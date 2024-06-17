@@ -346,6 +346,14 @@ nav ul ul li {
     gap: 16px;
     margin: 30px;
 }
+.text-p1 {
+    color: #aed0bd;
+    text-align: center;
+}
+
+.tituloN {
+    color: #e5ea8d;
+}
 
 .especialidad {
     color: yellow;
@@ -371,20 +379,13 @@ nav ul ul li {
     flex-wrap: wrap;
 }
 
-.text-p1 {
-    color: #aed0bd;
-    text-align: center;
-}
 
-.tituloN {
-    color: #e5ea8d;
-}
 
 .con-service {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-
 .servicio {
     color: #888485;
     background-color: #6e9eb0;
@@ -394,9 +395,10 @@ nav ul ul li {
     height: 50px;
     text-align: center;
     font-weight: bold;
-    width: 220px;
     border-radius: 10px;
     margin: 10px;
+    transition: transform 0.3s ease;
+
 }
 .servicio:hover{
     transform: scale(1.1);
@@ -531,7 +533,7 @@ nav {
     width: 60%;
     height: 100vh;
     padding: 20% 0;
-    background: rgba(255, 255, 255);
+    background: #0c6cac;
     transition: all 0.5s ease-in;
     z-index: 2;
   }
@@ -567,5 +569,9 @@ nav {
     nav ul {
       display: none;
     }
+    .menum{
+        color: white;
+      }
   }
   
+ 
